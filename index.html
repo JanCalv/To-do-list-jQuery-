@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>ToDo list</title>
+</head>
+<body>
+  <div class="container">
+    <div class="list-container">
+      <div class="app-heading">
+        <h1 class="app-heading-primary">To do list</h1>
+      </div>
+
+      <div class="input-container">
+        <input class="form-control task-input" type="text" placeholder="Type your task here...">
+        <button type="button" class="btn btn-primary add-btn">Add task</button>
+      </div>
+      
+      <div id="tab1" class="tab-container">
+        <ul class="tab-list">
+          <li rel="tab1" class="tab-list-item task-tab">Task</li>
+          <li rel="tab2" class="tab-list-item complete-tab">Completed Task</li>
+        </ul>
+        <div class="task-table">
+          <div id="task-row" class="task-items" hidden>
+            <div class="check-btn"><i class="fa fa-check-square check-btn"></i></div>
+            <div class="task"><h3 class="task-desc"></h3></div>
+            <div class="del-btn"><i class="fa fa-trash del-btn"></i></div>
+          </div>
+        </div>
+        <div id="tab2" class="complete-table hide">
+          <div class="complete-items" hidden>
+            <i class="fa fa-check"></i>
+            <div class="task"><h3 class="task-desc-com"></h3></div>
+          </div>
+        </div>      
+      </div>
+      <div class="undo"> <i class="fa fa-undo clear-btn"></i></div>
+    </div>
+    <div class="footer"><h4 id="name">©Jan Calvin Valenzuela</h4></div>
+  </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
